@@ -35,16 +35,16 @@ def changemodeToSinglePlayer():
     mode= "singlePlayer"
     SinglePlayer["bg"]="lightgreen"
     multiPlayer['bg']="lightgrey"
-    tkMessageBox.showinfo(message="Switched To Single Player")
     restartgame()
+    tkMessageBox.showinfo(message="Switched To Single Player")
 
 def changemodeToMultiplayer():
     global mode
     mode= "multiPlayer"
     multiPlayer['bg']="lightgreen"
     SinglePlayer["bg"]="lightgrey"
-    tkMessageBox.showinfo(message="Switched To Multi Player")
     restartgame()
+    tkMessageBox.showinfo(message="Switched To Multi Player")
 
 
 def updateBoard():
@@ -164,8 +164,8 @@ def play(event):
             if checkforwin(turn):
                 winningLabel=Label(fram1,text=f"{turn} wins the game ",bg="blue",font=("Arial",26),width=16)
                 winningLabel.grid(row=0,column=0,columnspan=3)
-                tkMessageBox.showinfo(message=f"{turn} wins the game ")
                 game_end=True
+                tkMessageBox.showinfo(message=f"{turn} wins the game ")
             turn = "O"
             updateBoard() 
             if mode=="singlePlayer":
@@ -173,8 +173,8 @@ def play(event):
                 if checkforwin(turn):
                     winningLabel=Label(fram1,text="Computer wins the game",bg="blue",font=("Arial",26),width=16)
                     winningLabel.grid(row=0,column=0,columnspan=3)
-                    tkMessageBox.showinfo(message="Computer wins the game")
                     game_end=True
+                    tkMessageBox.showinfo(message="Computer wins the game")
 
                 turn="X"
                 updateBoard()
@@ -184,8 +184,8 @@ def play(event):
             if checkforwin(turn):
                 winningLabel=Label(fram1,text=f"{turn} wins the game ", bg="blue",font=("Arial",26),width=16)
                 winningLabel.grid(row=0,column=0,columnspan=3)
-                tkMessageBox.showinfo(message=f"{turn} wins the game ")
                 game_end=True
+                tkMessageBox.showinfo(message=f"{turn} wins the game ")
             turn = "X"
         
         if checkfordraw():
