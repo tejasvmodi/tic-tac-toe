@@ -51,7 +51,6 @@ def updateBoard():
     for key in board.keys():
         buttons[key-1]["text"]=board[key]
 
-    
 def checkforwin(player):
     # all rows
     if board[1]==board[2] and board[1]==board[3] and board[3]==player:
