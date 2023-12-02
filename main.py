@@ -104,7 +104,7 @@ def minimax(board,ismaximize):
         return 0
 
     if ismaximize:
-        bestScore = -1 
+        bestScore = -100 
         for keys in board.keys():
             if(board[keys]==" "):
                 board[keys]="O"
@@ -114,7 +114,7 @@ def minimax(board,ismaximize):
                     bestScore = score
         return bestScore
     else:
-        bestScore = 1
+        bestScore = 100
      
         for keys in board.keys():
             if(board[keys]==" "):
@@ -127,7 +127,7 @@ def minimax(board,ismaximize):
         return bestScore 
 
 def playComputer():
-    bestScore = -1
+    bestScore = -100
     bestMove =0
      
     for keys in board.keys():
@@ -138,7 +138,7 @@ def playComputer():
             if score > bestScore:
                 bestScore = score
                 bestMove= keys
-    if checkfordraw():
+    if checkfordraw()==False:
         board[bestMove]= "O"
 
 def play(event):
