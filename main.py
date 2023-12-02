@@ -171,7 +171,7 @@ def play(event):
             if mode=="singlePlayer":
                 playComputer()
                 if checkforwin(turn):
-                    winningLabel=Label(fram1,text="Computer wins the game",bg="blue",font=("Arial",26),width=16)
+                    winningLabel=Label(fram1,text="Computer wins the game",bg="blue",font=("Arial",18),width=20)
                     winningLabel.grid(row=0,column=0,columnspan=3)
                     game_end=True
                     # tkMessageBox.showinfo(message="Computer wins the game")
@@ -190,7 +190,7 @@ def play(event):
         if checkfordraw():
             drawLabel=Label(fram1,text="Game draw", bg="blue",font=("Arial",26),width=16)
             drawLabel.grid(row=0,column=0,columnspan=3)
-            # tkMessageBox.showinfo(message="Game draw")
+            tkMessageBox.showinfo(message="Game draw")
 
 # UI Design 
 # change mode options
