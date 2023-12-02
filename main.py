@@ -45,6 +45,7 @@ def changemodeToMultiplayer():
     SinglePlayer["bg"]="lightgrey"
     tkMessageBox.showinfo(message="Switched To Multi Player")
     restartgame()
+    
 
 def updateBoard():
     for key in board.keys():
