@@ -199,7 +199,7 @@ def play(event):
 
 
 
-#   UI
+# UI Design 
 # change mode options
 SinglePlayer = Button(optionalFrame,text="SinglePlayer",width=13,height=1,font=("Arial",15),bg="lightgrey",relief=RAISED,borderwidth=5,command=changemodeToSinglePlayer)
 SinglePlayer.grid(row=0,column=0,columnspan=1,sticky=NW)
@@ -207,7 +207,7 @@ SinglePlayer.grid(row=0,column=0,columnspan=1,sticky=NW)
 multiPlayer = Button(optionalFrame,text="Multiplayer",width=13,height=1,font=("Arial",15),bg="lightgrey",relief=RAISED,borderwidth=5,command=changemodeToMultiplayer)
 multiPlayer.grid(row=0,column=1,columnspan=1,sticky=NW)
 
-#Tic Tac Toe Board
+# Tic Tac Toe Board
 
 # 1st row
 
