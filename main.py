@@ -7,7 +7,7 @@ root.title("Tic Tac Toe")
 
 root.resizable(0,0)
 
-fram1= Frame(root)
+fram1= Frame(root) 
 fram1.pack()
 titleLabel1=Label(fram1,text="Tic Tac Toe" , font=("Arial",26), bg="orange",width=16)
 titleLabel1.grid(row=0,column=0 )
