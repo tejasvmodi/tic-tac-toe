@@ -175,7 +175,6 @@ def play(event):
                     winningLabel.grid(row=0,column=0,columnspan=3)
                     game_end=True
                     tkMessageBox.showinfo(message="Computer wins the game")
-
                 turn="X"
                 updateBoard()
         else:
