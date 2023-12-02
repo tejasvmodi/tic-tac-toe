@@ -11,7 +11,7 @@ root.resizable(0,0)
 fram1= Frame(root) 
 fram1.pack()
 titleLabel1=Label(fram1,text="Tic Tac Toe" , font=("Arial",26), bg="blue",width=16)
-titleLabel1.grid(row=0,column=0 )
+titleLabel1.grid(row=0,column=0)
 
 optionalFrame= Frame(root,bg="grey")
 optionalFrame.pack()
@@ -106,7 +106,7 @@ def minimax(board,ismaximize):
     if ismaximize:
         bestScore = -100   
         for keys in board.keys():
-            if(board[keys]== " "):
+            if(board[keys]==" "):
                 board[keys]="O"
                 score=minimax(board,False)  
                 board[keys]=" "
@@ -117,7 +117,7 @@ def minimax(board,ismaximize):
         bestScore = 100
      
         for keys in board.keys():
-            if(board[keys]== " "):
+            if(board[keys]==" "):
                 board[keys]="X"
                 score=minimax(board,True)  
                 board[keys]=" "
@@ -131,7 +131,7 @@ def playComputer():
     bestMove =0
      
     for keys in board.keys():
-        if(board[keys]== " "):
+        if(board[keys]==" "):
             board[keys]="O"
             score=minimax(board,False)  
             board[keys]=" "
@@ -190,7 +190,7 @@ def play(event):
         if checkfordraw():
             drawLabel=Label(fram1,text="Game draw", bg="blue",font=("Arial",26),width=16)
             drawLabel.grid(row=0,column=0,columnspan=3)
-            tkMessageBox.showinfo(message="Game draw")
+            # tkMessageBox.showinfo(message="Game draw")
 
 # UI Design 
 # change mode options
