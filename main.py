@@ -165,7 +165,7 @@ def play(event):
                 winningLabel=Label(fram1,text=f"{turn} wins the game ",bg="blue",font=("Arial",26),width=16)
                 winningLabel.grid(row=0,column=0,columnspan=3)
                 game_end=True
-                tkMessageBox.showinfo(message=f"{turn} wins the game ")
+                # tkMessageBox.showinfo(message=f"{turn} wins the game ")
             turn = "O"
             updateBoard() 
             if mode=="singlePlayer":
@@ -174,7 +174,7 @@ def play(event):
                     winningLabel=Label(fram1,text="Computer wins the game",bg="blue",font=("Arial",26),width=16)
                     winningLabel.grid(row=0,column=0,columnspan=3)
                     game_end=True
-                    tkMessageBox.showinfo(message="Computer wins the game")
+                    # tkMessageBox.showinfo(message="Computer wins the game")
                 turn="X"
                 updateBoard()
         else:
@@ -184,13 +184,13 @@ def play(event):
                 winningLabel=Label(fram1,text=f"{turn} wins the game ", bg="blue",font=("Arial",26),width=16)
                 winningLabel.grid(row=0,column=0,columnspan=3)
                 game_end=True
-                tkMessageBox.showinfo(message=f"{turn} wins the game ")
+                # tkMessageBox.showinfo(message=f"{turn} wins the game ")
             turn = "X"
         
         if checkfordraw():
             drawLabel=Label(fram1,text="Game draw", bg="blue",font=("Arial",26),width=16)
             drawLabel.grid(row=0,column=0,columnspan=3)
-            tkMessageBox.showinfo(message="Game draw")
+            # tkMessageBox.showinfo(message="Game draw")
 
 # UI Design 
 # change mode options
